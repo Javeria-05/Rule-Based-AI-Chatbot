@@ -1,20 +1,24 @@
-# 🤖 Rule-Based AI Chatbot
+# 🤖 CareerBot - AI Career Guidance Assistant
 
-A simple Rule-Based AI Chatbot built using Python. This chatbot responds to predefined user inputs using dictionary-based responses and control flow logic.
+CareerBot is a Rule-Based AI Chatbot developed in Python to help students explore different career paths in technology and related fields. The chatbot provides career descriptions, required skills, learning roadmaps, resources, and career opportunities.
 
 ## 📌 Project Overview
 
-This project was developed as part of an Artificial Intelligence internship program. The chatbot uses rule-based logic to simulate basic human conversation by matching user inputs with predefined responses.
+This project was developed as part of an Artificial Intelligence Internship Program. It uses rule-based logic and a dictionary-based knowledge base to guide users about various career options.
 
 ## ✨ Features
 
-* Handles greetings and common questions
-* Uses a dictionary-based knowledge base
-* Continuous conversation loop
+* Career guidance for multiple technology careers
+* Detailed career descriptions
+* Required skills for each career
+* Step-by-step learning roadmaps
+* Learning resources and recommendations
+* Career opportunities information
+* Help command for navigation
+* Topics command to display available careers
 * Input sanitization using `lower()` and `strip()`
-* Fallback response for unknown inputs
-* Exit command to end the conversation
-* Beginner-friendly Python implementation
+* Continuous conversation loop
+* Exit command to end the session
 
 ## 🛠 Technologies Used
 
@@ -26,6 +30,7 @@ This project was developed as part of an Artificial Intelligence internship prog
 Rule-Based-AI-Chatbot/
 │
 ├── chatbot.py
+├── project_plan.txt
 └── README.md
 ```
 
@@ -34,7 +39,7 @@ Rule-Based-AI-Chatbot/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Javeria-05/Rule-Based-AI-Chatbot
+git clone https://github.com/Javeria-05/Rule-Based-AI-Chatbot.git
 ```
 
 2. Navigate to the project folder:
@@ -52,37 +57,47 @@ python chatbot.py
 ## 💬 Sample Conversation
 
 ```text
-You: hello
-Chatbot: Hi there!
+You: topics
 
-You: what is your name
-Chatbot: I am a Rule-Based AI Chatbot.
+========== AVAILABLE TOPICS ==========
+- Data Scientist
+- Data Analyst
+- AI Engineer
+- Software Engineer
+- Web Developer
+- Flutter Developer
 
-You: python
-Chatbot: Python is a programming language.
+You: web developer
 
-You: exit
-Chatbot: Goodbye! Have a nice day!
+Career: Web Developer
+
+Required Skills:
+- HTML
+- CSS
+- JavaScript
+- React
+- Node.js
 ```
 
 ## 🎯 Learning Outcomes
 
 Through this project, I learned:
 
-* Control flow in Python
-* Decision-making logic
-* Dictionaries and key-value mapping
+* Python dictionaries
+* Control flow and decision making
+* Rule-Based AI concepts
 * User input handling
-* Continuous loops
-* Basic AI chatbot concepts
+* Data organization and management
+* Career guidance system design
 
 ## 🚀 Future Improvements
 
+* Add 50+ career paths
 * GUI using Tkinter
 * Voice interaction
+* Career recommendations
+* Career search functionality
 * Chat history storage
-* Expanded knowledge base
-* Smart keyword matching
 
 ## 👩‍💻 Author
 
