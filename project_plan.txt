@@ -1,0 +1,64 @@
+Project Name:
+CareerBot - AI Career Guidance Assistant
+
+Project Type:
+Rule-Based AI Chatbot
+
+Goal:
+Help students explore different career paths and learn required skills, roadmaps, and career advice.
+
+Topics:
+
+1. Data Scientist
+2. Data Analyst
+3. AI Engineer
+4. Machine Learning Engineer
+5. Software Engineer
+6. Web Developer
+7. Frontend Developer
+8. Backend Developer
+9. Full Stack Developer
+10. Flutter Developer
+11. Android Developer
+12. iOS Developer
+13. Game Developer
+14. Cyber Security Analyst
+15. Ethical Hacker
+16. Cloud Engineer
+17. DevOps Engineer
+18. Database Administrator
+19. QA Engineer
+20. Blockchain Developer
+
+21. UI Designer
+22. UX Designer
+23. Graphic Designer
+24. Motion Designer
+25. Video Editor
+26. Animator
+27. Content Creator
+28. Technical Writer
+29. Digital Artist
+30. Product Designer
+
+31. Project Manager
+32. Product Manager
+33. Business Analyst
+34. HR Manager
+35. Marketing Specialist
+36. Digital Marketer
+37. SEO Specialist
+38. Sales Executive
+39. Entrepreneur
+40. Freelancer
+
+41. Resume Tips
+42. CV Writing
+43. Interview Tips
+44. LinkedIn Tips
+45. GitHub Tips
+46. Portfolio Building
+47. Internship Guidance
+48. Remote Jobs
+49. Career Switching
+50. Networking Tips
