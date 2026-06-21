@@ -340,37 +340,6 @@ career_data = {
         "Software Engineer"
     ]
 },
-    "ios developer": {
-    "description": "An iOS Developer creates applications for Apple devices.",
-
-    "skills": [
-        "Swift",
-        "Xcode",
-        "UIKit",
-        "APIs",
-        "Firebase"
-    ],
-
-    "roadmap": [
-        "Learn Swift",
-        "Learn Xcode",
-        "Build iOS Apps",
-        "Learn APIs",
-        "Publish Apps"
-    ],
-
-    "resources": [
-        "Apple Developer Docs",
-        "YouTube",
-        "Udemy"
-    ],
-
-    "careers": [
-        "iOS Developer",
-        "Mobile App Developer",
-        "Software Engineer"
-    ]
-},
     "cyber security analyst": {
     "description": "A Cyber Security Analyst protects systems and networks from cyber threats.",
 
@@ -1332,7 +1301,38 @@ career_data = {
     "roadmap": ["Assess Interests", "Explore Careers", "Identify Skills", "Set Goals", "Create Career Plan"],
     "resources": ["Coursera", "LinkedIn Learning", "YouTube"],
     "careers": ["Student", "Graduate", "Professional"]
-}
+},
+    "career planning": {
+    "description": "Career Planning helps individuals set career goals and create a roadmap for success.",
+
+    "skills": [
+        "Goal Setting",
+        "Planning",
+        "Decision Making",
+        "Self Assessment",
+        "Career Research"
+    ],
+
+    "roadmap": [
+        "Identify Interests",
+        "Set Career Goals",
+        "Research Careers",
+        "Develop Skills",
+        "Track Progress"
+    ],
+
+    "resources": [
+        "Coursera",
+        "LinkedIn Learning",
+        "YouTube"
+    ],
+
+    "careers": [
+        "Student",
+        "Graduate",
+        "Professional"
+    ]
+},
 }
 responses = {
     "hello": "Hi there!",
@@ -1360,6 +1360,7 @@ responses = {
 print("=" * 60)
 print("🤖 CareerBot - AI Career Guidance Assistant")
 print("=" * 60)
+print(f"📚 Total Topics Available: {len(career_data)}")
 print("Type 'help' to see commands")
 print("Type 'topics' to see available careers")
 print("Type 'exit' to quit")
@@ -1375,24 +1376,14 @@ while True:
         break
 
     if clean_input == "help":
-        print("\n========== HELP MENU ==========")
-        print("General Commands:")
-        print("- hello / hi     : Start conversation")
-        print("- help           : Show help menu")
-        print("- topics         : Show all career topics")
-        print("- exit           : Close CareerBot")
-        
-        print("\nCurrent Career Topics:")
-        print("- Data Scientist")
-        print("- Data Analyst")
-        print("- AI Engineer")
-        print("- Software Engineer")
-        print("- Web Developer")
-        print("- Flutter Developer")
-        print("\nUse a career name to get guidance.")
-        print("Example: data scientist")
+     print("\n========== HELP MENU ==========")
+     print("General Commands:")
+     print("- hello / hi     : Start conversation")
+     print("- help           : Show help menu")
+     print("- topics         : Show all career topics")
+     print("- exit           : Close CareerBot")
 
-        continue
+     continue
 
     if clean_input == "topics":
         print("\n========== AVAILABLE TOPICS ==========")
@@ -1400,41 +1391,41 @@ while True:
         for topic in career_data:
             print("-", topic.title())
 
-        print("\nTotal Topics:", len(career_data))
+        print(f"📚 Total Topics Available: {len(career_data)}")
         continue
 
     if clean_input in career_data:
 
         career = career_data[clean_input]
 
-        print("\n==============================")
-        print("Career:", clean_input.title())
-        print("==============================")
+        print("\n" + "=" * 40)
+        print("🎯 Career:", clean_input.title())
+        print("=" * 40)
 
-        print("\nDescription:")
+        print("\n📝 Description:")
         print(career["description"])
 
-        print("\nRequired Skills:")
+        print("\n🛠 Required Skills:")
         for skill in career["skills"]:
-            print("-", skill)
+         print("-", skill)
 
-        print("\nRoadmap:")
+        print("\n🗺 Roadmap:")
         for step in career["roadmap"]:
-            print("-", step)
+         print("-", step)
 
-        print("\nResources:")
+        print("\n📚 Resources:")
         for resource in career["resources"]:
-            print("-", resource)
+         print("-", resource)
 
-        print("\nCareer Opportunities:")
+        print("\n💼 Career Opportunities:")
         for job in career["careers"]:
-            print("-", job)
+         print("-", job)
 
         continue
 
     reply = responses.get(
         clean_input,
-        "Sorry, I do not understand. Please try another question."
+        "Sorry, I don't understand. Type 'help' to see commands or 'topics' to view available career topics."
     )
 
     print("Chatbot:", reply)
