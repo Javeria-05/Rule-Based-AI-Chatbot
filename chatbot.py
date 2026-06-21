@@ -1,3 +1,6 @@
+# ========================================
+# CAREER DATA KNOWLEDGE BASE
+# ========================================
 career_data = {
     "data scientist": {
     "description": "A Data Scientist analyzes data and builds intelligent models to solve real-world problems.",
@@ -1334,6 +1337,9 @@ career_data = {
     ]
 },
 }
+# ========================================
+# GENERAL CHATBOT RESPONSES
+# ========================================
 responses = {
     "hello": "Hi there!",
     "hi": "Hello!",
@@ -1357,6 +1363,9 @@ responses = {
     "university": "A university provides higher education."
 }
 
+# ========================================
+# WELCOME SCREEN
+# ========================================
 print("=" * 60)
 print("🤖 CareerBot - AI Career Guidance Assistant")
 print("=" * 60)
@@ -1366,6 +1375,9 @@ print("Type 'topics' to see available careers")
 print("Type 'exit' to quit")
 print("=" * 60)
 
+# ========================================
+# MAIN CHATBOT LOOP
+# ========================================
 while True:
     user_input = input("\nYou: ")
 
@@ -1375,6 +1387,7 @@ while True:
         print("Chatbot: Goodbye! Have a nice day!")
         break
 
+# Help Command
     if clean_input == "help":
      print("\n========== HELP MENU ==========")
      print("General Commands:")
@@ -1385,6 +1398,7 @@ while True:
 
      continue
 
+# Topics Command
     if clean_input == "topics":
         print("\n========== AVAILABLE TOPICS ==========")
 
@@ -1394,6 +1408,7 @@ while True:
         print(f"📚 Total Topics Available: {len(career_data)}")
         continue
 
+# Career Guidance Section
     if clean_input in career_data:
 
         career = career_data[clean_input]
@@ -1423,6 +1438,7 @@ while True:
 
         continue
 
+# Career Guidance Section
     reply = responses.get(
         clean_input,
         "Sorry, I don't understand. Type 'help' to see commands or 'topics' to view available career topics."
